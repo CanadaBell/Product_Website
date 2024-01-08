@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Website</title>      
+    <link rel="stylesheet" href="css/style.css"> <!-- Links css -->
+    <script src="js/products.js"></script> <!-- Products json -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" /> <!-- Close icon -->
+</head>
+<body>
+    <header>
+        <h1>NovaView Electronics</h1>
+        <h5>Illuminating Tomorrow's Vison Today</h5>
+        <h6>(+34) 948 22 12 81 | R983+8X Pamplona, Spain</h6>
+    </header>
+    <div class="product-page" id="product-page">
+        <script src="js/populate_products.js"></script> <!-- Adds products to page-->
+    </div>
+    <footer> 
+        © Thomas Kovacs 2023 <br>
+        Name generated on ChatGPT <br> 
+        Logo / Product art generated on Craiyon <br>
+        Descriptions generated on https://ahrefs.com/ <br>
+    </footer>
+
+    <!-- First window with product name, model, img and description -->
+    <div id="overlay">
+        <div id="overlay-content">
+            <div id="close">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <img src="" alt="" id="pImg">
+            <h1 id="product-name">-</h1>
+            <h4 id="model-number">-</h4>
+            <h2 id="price">-</h2>
+            <p id="description">-</p>
+        </div>
+    </div>
+    
+    <!-- Second window with product img -->
+    <div id="img-overlay">
+        <div id="img-overlay-content">
+            <div id="img-close">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </div>
+            <img src="" alt="" id="bigger-img">
+        </div>
+    </div>
+</body>
+</html>
